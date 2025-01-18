@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App, .Notes {
+    width: 800px;
+}
+
+.note {
+    display: flex;
+    padding: 15px;
+    border: 2px solid darkblue;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note__btns {
+    display: flex;
+}
+
+.note-enter {
+    transform: translateX(-350px);
+}
+.note-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+
+.note-exit {
+    transform: translateX(0px);
+}
+.note-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+.page {
+    padding: 10px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+}
+.page__current {
+    border: 2px solid darkblue;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: dodgerblue;
+}
+
+.navbar__links {
+    margin-left: auto;
+}

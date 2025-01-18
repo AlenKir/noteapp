@@ -1,0 +1,9 @@
+.myButton {
+    padding: 5px 15px;
+    margin: 2px;
+    color: dodgerblue;
+    font-size: 14px;
+    background: darkblue;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+}

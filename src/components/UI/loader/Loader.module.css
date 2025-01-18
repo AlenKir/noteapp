@@ -1,0 +1,25 @@
+.Loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px dashed darkblue;
+    animation: rotate 5s linear infinite, fade 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
