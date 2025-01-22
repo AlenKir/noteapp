@@ -81,7 +81,9 @@ function Notes() {
             }
             <NoteList remove={removeNote} notes={sortedAndSearchedNotes} title='Notes'/>
 
-            <div ref={lastElement} style={{height: 20, visibility: "hidden"}}></div>
+            <div ref={lastElement} style={{height: 20, background: "dodgerblue"}}>
+
+            </div>
         </div>
     );
 }

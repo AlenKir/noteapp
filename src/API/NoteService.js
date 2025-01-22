@@ -14,26 +14,14 @@ export default class NoteService {
     }
 
     static async getNoteById(id) {
-
-        console.log(id);
-
         const response = await
             axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
-
-        console.log(response)
-
         return response;
     }
 
     static async getTodoByNoteId(id) {
-
-        console.log(id);
-
         const response = await
             axios.get(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
-
-        console.log(response)
-
         return response;
     }
 }
